@@ -1,0 +1,196 @@
+/* Navbar Styles */
+.Navbar {
+    background-color: rgb(63, 62, 62);
+    color: white;
+    font-size: 30px;
+    height: 170px;
+    border-radius: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav-title {
+    margin-left: 20px;
+}
+
+/* Add Button */
+.Add-Button {
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: rgb(0, 94, 255);
+    padding: 20px 40px;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.Add-Button:hover {
+    background-color: rgb(21, 88, 203);
+}
+
+/* Note Area */
+.note-area {
+    padding: 20px;
+    margin: 50px auto;
+    margin-left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 20px;
+    width: 80%;
+    min-height: 300px;
+    max-width: 2000px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.Navbar a {
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.Navbar a:hover {
+    color: blue;
+}
+
+.AddNote {
+    justify-items: center;
+}
+
+
+
+
+
+
+
+.NoteList {
+
+    padding: 60px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.NoteItem {
+    background-color: rgb(238, 205, 106);
+    border-radius: 10px;
+    padding: 40px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.NoteActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.EditButton,
+.DeleteButton {
+    margin-left: 10px;
+    background-color: rgb(238, 205, 106);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    border: 0.2px solid;
+}
+
+.EditButton:hover,
+.DeleteButton:hover {
+    box-shadow: 3px 6px 9px black;
+}
+
+
+
+
+
+
+.check-grammar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #4CAF50;
+    /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.check-grammar:hover {
+    background-color: #45a049;
+    /* Darker green */
+    transform: scale(1.05);
+}
+
+.check-grammar:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+.check-grammar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+/* Toast Notification Custom Styles */
+.Toastify__toast-container {
+    width: 300px;
+}
+
+.Toastify__toast {
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Toastify__toast--success {
+    background-color: #28a745 !important;
+    /* Green for success */
+    color: white !important;
+}
+
+.Toastify__toast--error {
+    background-color: #dc3545 !important;
+    /* Red for error */
+    color: white !important;
+}
+
+.Toastify__progress-bar {
+    background-color: white !important;
+}
