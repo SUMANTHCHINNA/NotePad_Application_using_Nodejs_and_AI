@@ -16,7 +16,7 @@ const AddNote = () => {
 
         setLoading(true);
         try {
-            const response = await axios.post("http://localhost:9000/note/grammar-check", { text: note });
+            const response = await axios.post("https://notepad-application-using-nodejs-and-ai-4.onrender.com/note/grammar-check", { text: note });
             let correctedText = response.data.corrected || "No corrections needed.";
 
             correctedText = correctedText.replace(/^"|"$/g, "").trim();
@@ -41,7 +41,7 @@ const AddNote = () => {
             }
 
             const response = await axios.post(
-                "http://localhost:9000/note/add",
+                "https://notepad-application-using-nodejs-and-ai-4.onrender.com/note/add",
                 { data: note },
                 { headers: { "Content-Type": "application/json" } }
             );

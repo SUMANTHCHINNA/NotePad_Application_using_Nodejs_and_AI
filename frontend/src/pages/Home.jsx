@@ -10,7 +10,7 @@ const Home = () => {
     useEffect(() => {
         const fetchNotes = async () => {
             try {
-                const response = await axios.get("http://localhost:9000/note/all");
+                const response = await axios.get("https://notepad-application-using-nodejs-and-ai-4.onrender.com/note/all");
                 if (Array.isArray(response.data.data)) {
                     setNotes(response.data.data);
                 } else {
@@ -28,7 +28,7 @@ const Home = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:9000/note/delete/${id}`);
+            await axios.delete(`https://notepad-application-using-nodejs-and-ai-4.onrender.com/note/delete/${id}`);
             setNotes(notes.filter(note => note._id !== id));
         } catch (error) {
             console.error("Error deleting note:", error);
