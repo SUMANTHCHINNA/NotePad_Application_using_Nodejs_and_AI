@@ -68,6 +68,8 @@ body {
     min-height: 200px;
     border: 2px solid #ccc;
     background-color: #fff;
+    margin-left: 60px;
+    margin-right: 50px;
 }
 
 /* Adjustments for medium screens */
@@ -76,6 +78,7 @@ body {
         font-size: 18px;
         padding: 18px;
         margin-left: 60px;
+        margin-right: 50px;
         /* Adjusted left margin */
         min-width: 280px;
         max-width: 1000px;
@@ -89,6 +92,7 @@ body {
         padding: 15px;
         min-height: 180px;
         margin-left: 40px;
+        margin-right: 50px;
         /* Adjusted left margin */
         min-width: 250px;
         max-width: 90%;
